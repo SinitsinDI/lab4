@@ -6,7 +6,8 @@
 #include "svg.h"
 #include <curl/curl.h>
 using namespace std;
-Input read_input(istream& in, bool prompt) {
+Input read_input(istream& in, bool prompt)
+{
     Input data;
 
     if (prompt)
@@ -22,7 +23,15 @@ Input read_input(istream& in, bool prompt) {
     in >> data.bin_count;
     return data;
 }
-
+size_t
+write_data(void* items, size_t item_size, size_t item_count, void* ctx)
+{
+    size_t data_size = item_size * item_count;
+    stringstream* buffer = reinterpret_cast<stringstream*>(ctx);
+    (*buffer).write(reinterpret_cast<const char*>(items), data_size);
+    return data_size;
+    return 0;
+}
 Input download(const string& address) {
     stringstream buffer;
     curl_global_init(CURL_GLOBAL_ALL);
@@ -30,6 +39,8 @@ Input download(const string& address) {
     if(curl) {
         CURLcode res;
         curl_easy_setopt(curl, CURLOPT_URL, address.c_str());
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+        curl_easy_setopt(curl, CURLOPT_WRITEDATA, &buffer);
         res = curl_easy_perform(curl);
         if (res) {
             cerr << curl_easy_strerror(res) << endl;
@@ -39,11 +50,16 @@ Input download(const string& address) {
     curl_easy_cleanup(curl);
     return read_input(buffer, false);
 }
-int main(int argc, char* argv[]) {
+
+int main(int argc, char* argv[])
+{
     Input input;
-    if (argc > 1) {
+    if (argc > 1)
+    {
         input = download(argv[1]);
-    } else {
+    }
+    else
+    {
         input = read_input(cin, true);
     }
 
