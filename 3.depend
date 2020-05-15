@@ -28,3 +28,57 @@
 	<vector>
 	<string>
 
+1589562042 source:c:\users\pc\desktop\lab3-master\histogram.cpp
+	"histogram.h"
+	<iostream>
+
+1589562042 c:\users\pc\desktop\lab3-master\histogram.h
+	<vector>
+	<iostream>
+
+1589562649 source:c:\users\pc\desktop\lab3-master\main.cpp
+	<iostream>
+	<vector>
+	"histogram.h"
+	"svg.h"
+	<curl/curl.h>
+
+1587991348 c:\users\pc\desktop\lab3-master\curl\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<osreldate.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	<support/SupportDefs.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"typecheck-gcc.h"
+
+1588129392 c:\users\pc\desktop\lab3-master\curl\include\curl\curlver.h
+
+1587548874 c:\users\pc\desktop\lab3-master\curl\include\curl\system.h
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1587548874 c:\users\pc\desktop\lab3-master\curl\include\curl\easy.h
+
+1587548874 c:\users\pc\desktop\lab3-master\curl\include\curl\multi.h
+	"curl.h"
+
+1587548874 c:\users\pc\desktop\lab3-master\curl\include\curl\urlapi.h
+	"curl.h"
+
+1587548874 c:\users\pc\desktop\lab3-master\curl\include\curl\typecheck-gcc.h
+
