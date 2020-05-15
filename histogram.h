@@ -10,5 +10,5 @@ struct Input {
 void find_minmax(const vector<double>& numbers, double& min, double& max);
 vector<double> input_numbers(istream& in ,size_t count);
 vector <size_t> make_histogram(Input);
-void show_histogram_text(vector<size_t>bins);
+void show_histogram_text(const vector<size_t>& bins);
 #endif // HISTOGRAM_H_INCLUDED
