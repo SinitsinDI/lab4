@@ -28,11 +28,17 @@ int main(int argc, char* argv[])
     if (argc>1)
     {
         CURL *curl = curl_easy_init();
+        const char *curl_easy_strerror(CURLcode errornum);
         if(curl)
         {
             CURLcode res;
             curl_easy_setopt(curl, CURLOPT_URL, argv[1]);
             res = curl_easy_perform(curl);
+            if (res!=0)
+            {
+                curl_easy_strerror(res);
+                exit(1);
+            }
             curl_easy_cleanup(curl);
         }
         return(0);
