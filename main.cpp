@@ -2,16 +2,11 @@
 #include <vector>
 #include "histogram.h"
 #include "svg.h"
-#include <windows.h>
 using namespace std;
 
 
 int main()
 {
-    char system_name[MAX_COMPUTERNAME_LENGTH + 1];
-    DWORD Size = sizeof(system_name);
-    GetComputerNameA(system_name, &Size);
-    printf("System name: %s", system_name);
     //  printf("WinVersion  %x\n", GetVersion());
     //  printf("WinVersion  %u\n", GetVersion());
     /* DWORD mask = 0x0000ffff;
@@ -32,7 +27,7 @@ int main()
           printf(" build %u", build);
       }*/
 
-    /* size_t number_count;
+     size_t number_count;
      cerr << "Enter number count: ";
      cin >> number_count;
 
@@ -47,6 +42,6 @@ int main()
      find_minmax(numbers,min,max);
 
      const auto bins = make_histogram(numbers, bin_count,min,max);
-     show_histogram_svg(bins);*/
+     show_histogram_svg(bins);
     return 0;
 }
