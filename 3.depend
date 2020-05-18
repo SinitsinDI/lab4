@@ -20,19 +20,24 @@
 	"svg.h"
 	<iostream>
 
-1589545145 source:c:\users\pc\desktop\lab3-master\svg.cpp
+1587632652 D
+
+1589819956 source:c:\users\pc\desktop\lab3-master\svg.cpp
 	"svg.h"
+	"WinVersion.h"
 	<iostream>
 
 1589545145 c:\users\pc\desktop\lab3-master\svg.h
 	<vector>
 	<string>
+	<vector>
+	<string>
 
-1589562042 source:c:\users\pc\desktop\lab3-master\histogram.cpp
+1589819947 source:c:\users\pc\desktop\lab3-master\histogram.cpp
 	"histogram.h"
 	<iostream>
 
-1589563676 c:\users\pc\desktop\lab3-master\histogram.h
+1589819947 c:\users\pc\desktop\lab3-master\histogram.h
 	<vector>
 	<iostream>
 
@@ -81,4 +86,14 @@
 	"curl.h"
 
 1587548874 c:\users\pc\desktop\lab3-master\curl\include\curl\typecheck-gcc.h
+
+1589545145 04-2
+
+1589820532 c:\users\pc\desktop\lab3-master\winversion.h
+
+1589819956 source:c:\users\pc\desktop\lab3-master\winversion.cpp
+	<windows.h>
+	<iostream>
+	<string>
+	<sstream>
 
