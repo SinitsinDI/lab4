@@ -2,11 +2,15 @@
 #include <vector>
 #include "histogram.h"
 #include "svg.h"
+#include <windows.h>
 using namespace std;
 
 
 int main()
 {
+
+    printf("WinVersion  %x\n", GetVersion());
+    printf("WinVersion  %u\n", GetVersion());
 
     size_t number_count;
     cerr << "Enter number count: ";

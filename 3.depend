@@ -20,3 +20,18 @@
 	"svg.h"
 	<iostream>
 
+1589812352 source:c:\users\pc\desktop\lab3-master\histogram.cpp
+	"histogram.h"
+	<iostream>
+
+1589812352 c:\users\pc\desktop\lab3-master\histogram.h
+	<vector>
+
+1589545145 source:c:\users\pc\desktop\lab3-master\svg.cpp
+	"svg.h"
+	<iostream>
+
+1589545145 c:\users\pc\desktop\lab3-master\svg.h
+	<vector>
+	<string>
+
