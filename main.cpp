@@ -41,8 +41,10 @@ Input download(const string& address) {
         curl_easy_setopt(curl, CURLOPT_URL, address.c_str());
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &buffer);
+        curl_easy_setopt(curl, CURLOPT_FAILONERROR, 1L);//variant 17
         res = curl_easy_perform(curl);
-        if (res) {
+        //if (res) { //without a variant
+        if (res == CURLE_HTTP_RETURNED_ERROR) { //variant 17
             cerr << curl_easy_strerror(res) << endl;
             exit(1);
         }

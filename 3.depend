@@ -41,9 +41,11 @@
 	<vector>
 	<iostream>
 
-1589563610 source:c:\users\pc\desktop\lab3-master\main.cpp
+1590607947 source:c:\users\pc\desktop\lab3-master\main.cpp
 	<iostream>
 	<vector>
+	<sstream>
+	<string>
 	"histogram.h"
 	"svg.h"
 	<curl/curl.h>
